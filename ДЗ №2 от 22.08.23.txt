@@ -1,0 +1,27 @@
+ задания.
+
+ 1.Как отказаться от изменений в файле (файлах) находящийся в рабочем 
+каталоге (work directory)?
+Ответ:
+ git checkout file.txt или если много файлов 
+git checkout .
+
+2.Как вернуть файл из индекса в рабочий каталог?
+Ответ: 
+git restore --staged [file name]  
+
+3.Как отменить ошибочный commit ? - Перечислить все возможные варианты.
+Ответ: 
+git checkout file.txt
+git commit --amend -m "[commit message]"
+git reset HEAD ~ [number]
+git restore --staged [file name] 
+
+4.Как исправить коммит отправленный на сервер GitHub?
+Ответ: 
+git revert HEAD
+
+5.Как создать новую ветку и переключится в нее?
+Ответ:
+git checkout -b [branch name]
+В ответах на вопросы необходимо указать конкретные команда git.
